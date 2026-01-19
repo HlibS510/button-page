@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
+    <title>Game Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Page</h1>
+
+    <div class="button-wrapper">
+        <div class="button-group">
+            <a href="{{ url_for('left_click') }}" class="button-link">Click Left</a>
+            <p class="counter-text">Left clicked: {{ left }}</p>
+        </div>
+
+        <div class="button-group">
+            <a href="{{ url_for('right_click') }}" class="button-link">Click Right</a>
+            <p class="counter-text">Right clicked: {{ right }}</p>
+        </div>
+    </div>
+</body>
+</html>
